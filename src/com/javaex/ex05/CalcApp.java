@@ -17,10 +17,12 @@ public class CalcApp {
 			}
 
 			String[] split = num.split(" ");
+			int a = Integer.parseInt(split[0]);
+			int b = Integer.parseInt(split[2]);
 			if (split[1].equals("+")) {
-				int a = Integer.parseInt(split[0]);
-				int b = Integer.parseInt(split[2]);
-				int result = a + b;
+				Add divide = new Add();
+				divide.setValue(a, b);
+				System.out.println(divide.calculate());
 				System.out.println(">>" + result);
 			} else if (split[1].equals("-")) {
 				int a = Integer.parseInt(split[0]);
