@@ -10,9 +10,8 @@ public class Sub {
     	this.b = b;
     }
 
-    public int calculate(int result) {
-    	result = this.a - this.b;
-    	return result;
+    public int calculate() {
+    	return a / b;
     }
 
 }
